@@ -1,0 +1,84 @@
+diff --git a/src/prettytable/prettytable.py b/src/prettytable/prettytable.py
+index 4cf2f38..65723ba 100644
+--- a/src/prettytable/prettytable.py
++++ b/src/prettytable/prettytable.py
+@@ -3163,7 +3163,8 @@ def _make_table_handler():
+         def handle_starttag(
+             self, tag: str, attrs: list[tuple[str, str | None]]
+         ) -> None:
+-            self.active = tag
++            if tag in ["th", "td"]:
++                self.active = tag
+             if tag == "th":
+                 self.is_last_row_header = True
+             for key, value in attrs:
+@@ -3178,6 +3179,8 @@ def _make_table_handler():
+                     for _ in range(1, self.colspan):
+                         self.last_row.append("")
+                     self.colspan = 0
++                self.last_content = " "
++                self.active = None
+ 
+             if tag == "tr":
+                 self.rows.append((self.last_row, self.is_last_row_header))
+@@ -3188,11 +3191,10 @@ def _make_table_handler():
+                 table = self.generate_table(self.rows)
+                 self.tables.append(table)
+                 self.rows = []
+-            self.last_content = " "
+-            self.active = None
+ 
+         def handle_data(self, data: str) -> None:
+-            self.last_content += data
++            if self.active in ["th", "td"]:
++                self.last_content += data
+ 
+         def generate_table(self, rows: list[tuple[list[str], bool]]) -> PrettyTable:
+             """
+diff --git a/tests/test_html.py b/tests/test_html.py
+index acfd31c..eb31745 100644
+--- a/tests/test_html.py
++++ b/tests/test_html.py
+@@ -6,6 +6,42 @@ from prettytable import HRuleStyle, PrettyTable, from_html, from_html_one
+ 
+ 
+ class TestHtmlConstructor:
++    @pytest.mark.parametrize("tag", ["th", "td"])
++    @pytest.mark.parametrize(
++        ("content", "expected"),
++        [
++            ("  plain  ", "plain"),
++            ("<strong>Alice</strong>", "Alice"),
++            ("before <em>middle</em> after", "before middle after"),
++            ("<span>Al</span><b>ice</b>", "Alice"),
++            ("<b>A<em>li</em>ce</b>", "Alice"),
++            ('<a href="/example">A&amp;B</a>', "A&B"),
++            ("<span>中文</span> café", "中文 café"),
++            ("<b></b>", ""),
++        ],
++    )
++    def test_html_inline_cell_text(self, tag: str, content: str, expected: str) -> None:
++        header = content if tag == "th" else "Field"
++        value = content if tag == "td" else "value"
++        html = f"<table><tr><th>{header}</th></tr><tr><td>{value}</td></tr></table>"
++
++        table = from_html_one(html)
++
++        assert table.field_names == [expected if tag == "th" else "Field"]
++        assert table.rows == [[expected if tag == "td" else "value"]]
++
++    def test_html_inline_text_outside_cells(self) -> None:
++        html = (
++            "<p>Outside <em>text</em></p>"
++            "<table><caption>Table <b>caption</b></caption>"
++            "<tr><th>Field</th></tr><tr><td>value</td></tr></table>"
++        )
++
++        table = from_html_one(html)
++
++        assert table.field_names == ["Field"]
++        assert table.rows == [["value"]]
++
+     def test_html_and_back(self, city_data: PrettyTable) -> None:
+         html_string = city_data.get_html_string()
+         new_table = from_html(html_string)[0]

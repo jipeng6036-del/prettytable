@@ -1,0 +1,65 @@
+{
+  "lane": "candidate",
+  "python": "3.14.9 (main, Oct 21 2026, 22:25:42) [GCC 14.2.0]",
+  "module": "/runtime-candidate-final/lib/python3.14/site-packages/prettytable/__init__.py",
+  "version": "3.18.1.dev18",
+  "installedSourceBlobs": [
+    {
+      "file": "/runtime-candidate-final/lib/python3.14/site-packages/prettytable/__init__.py",
+      "blob": "5876dcfeac45fd01cb14299dc51919477fa015cc"
+    },
+    {
+      "file": "/runtime-candidate-final/lib/python3.14/site-packages/prettytable/__main__.py",
+      "blob": "ffd1381a652df47e8c6a99465e486a6e80ee1812"
+    },
+    {
+      "file": "/runtime-candidate-final/lib/python3.14/site-packages/prettytable/colortable.py",
+      "blob": "0f9d417a4e3aa076329de1a19fc2681c44f2cf20"
+    },
+    {
+      "file": "/runtime-candidate-final/lib/python3.14/site-packages/prettytable/prettytable.py",
+      "blob": "65723ba53c7b5f8241ff20e336b2c340db55bcc0"
+    },
+    {
+      "file": "/runtime-candidate-final/lib/python3.14/site-packages/prettytable/py.typed",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    }
+  ],
+  "fieldNames": [
+    "Name",
+    "Role"
+  ],
+  "rows": [
+    [
+      "Alice Example",
+      "Engineer"
+    ]
+  ],
+  "csvReadFromDisk": [
+    [
+      "Name",
+      "Role"
+    ],
+    [
+      "Alice Example",
+      "Engineer"
+    ]
+  ],
+  "restoredFields": [
+    "Name",
+    "Role"
+  ],
+  "restoredRows": [
+    [
+      "Alice Example",
+      "Engineer"
+    ]
+  ],
+  "textReadFromDisk": "+---------------+----------+\n|      Name     |   Role   |\n+---------------+----------+\n| Alice Example | Engineer |\n+---------------+----------+",
+  "correct": true,
+  "files": {
+    "input.html": "41a16689e885373d53f3511d60356e526e14d5680dd546a72aba762f608c05f7",
+    "output.csv": "deda16de7a88038331c11700927ba3b6651e926f1f127ffb049367b4392bccd3",
+    "output.txt": "7bc538525fcaf14bb58520d999ed775a4ad2d284c7687ca30bc16f6a300a00e9"
+  }
+}

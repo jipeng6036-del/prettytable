@@ -1,0 +1,426 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.1.1, pluggy-1.7.0
+rootdir: <workspace>\inspection\resume-20261026-py-prettytable
+configfile: pyproject.toml
+plugins: platformdirs-4.13.5, cov-7.1.0, lazy-fixtures-1.4.1
+collected 38 items / 21 deselected / 17 selected
+
+tests\test_html.py ..FFFFFFFFFFFF...                                     [100%]
+
+================================== FAILURES ===================================
+_ TestHtmlConstructor.test_html_inline_cell_text[<strong>Alice</strong>-Alice-th] _
+
+self = <test_html.TestHtmlConstructor object at 0x000002068540E5D0>, tag = 'th'
+content = '<strong>Alice</strong>', expected = 'Alice'
+
+    @pytest.mark.parametrize("tag", ["th", "td"])
+    @pytest.mark.parametrize(
+        ("content", "expected"),
+        [
+            ("  plain  ", "plain"),
+            ("<strong>Alice</strong>", "Alice"),
+            ("before <em>middle</em> after", "before middle after"),
+            ("<span>Al</span><b>ice</b>", "Alice"),
+            ("<b>A<em>li</em>ce</b>", "Alice"),
+            ('<a href="/example">A&amp;B</a>', "A&B"),
+            ("<span>中文</span> café", "中文 café"),
+            ("<b></b>", ""),
+        ],
+    )
+    def test_html_inline_cell_text(self, tag: str, content: str, expected: str) -> None:
+        header = content if tag == "th" else "Field"
+        value = content if tag == "td" else "value"
+        html = f"<table><tr><th>{header}</th></tr><tr><td>{value}</td></tr></table>"
+    
+        table = from_html_one(html)
+    
+>       assert table.field_names == [expected if tag == "th" else "Field"]
+E       AssertionError: assert [''] == ['Alice']
+E         
+E         At index 0 diff: '' != 'Alice'
+E         Use -v to get more diff
+
+tests\test_html.py:30: AssertionError
+_ TestHtmlConstructor.test_html_inline_cell_text[<strong>Alice</strong>-Alice-td] _
+
+self = <test_html.TestHtmlConstructor object at 0x000002068540E410>, tag = 'td'
+content = '<strong>Alice</strong>', expected = 'Alice'
+
+    @pytest.mark.parametrize("tag", ["th", "td"])
+    @pytest.mark.parametrize(
+        ("content", "expected"),
+        [
+            ("  plain  ", "plain"),
+            ("<strong>Alice</strong>", "Alice"),
+            ("before <em>middle</em> after", "before middle after"),
+            ("<span>Al</span><b>ice</b>", "Alice"),
+            ("<b>A<em>li</em>ce</b>", "Alice"),
+            ('<a href="/example">A&amp;B</a>', "A&B"),
+            ("<span>中文</span> café", "中文 café"),
+            ("<b></b>", ""),
+        ],
+    )
+    def test_html_inline_cell_text(self, tag: str, content: str, expected: str) -> None:
+        header = content if tag == "th" else "Field"
+        value = content if tag == "td" else "value"
+        html = f"<table><tr><th>{header}</th></tr><tr><td>{value}</td></tr></table>"
+    
+        table = from_html_one(html)
+    
+        assert table.field_names == [expected if tag == "th" else "Field"]
+>       assert table.rows == [[expected if tag == "td" else "value"]]
+E       AssertionError: assert [['']] == [['Alice']]
+E         
+E         At index 0 diff: [''] != ['Alice']
+E         Use -v to get more diff
+
+tests\test_html.py:31: AssertionError
+_ TestHtmlConstructor.test_html_inline_cell_text[before <em>middle</em> after-before middle after-th] _
+
+self = <test_html.TestHtmlConstructor object at 0x000002068540E690>, tag = 'th'
+content = 'before <em>middle</em> after', expected = 'before middle after'
+
+    @pytest.mark.parametrize("tag", ["th", "td"])
+    @pytest.mark.parametrize(
+        ("content", "expected"),
+        [
+            ("  plain  ", "plain"),
+            ("<strong>Alice</strong>", "Alice"),
+            ("before <em>middle</em> after", "before middle after"),
+            ("<span>Al</span><b>ice</b>", "Alice"),
+            ("<b>A<em>li</em>ce</b>", "Alice"),
+            ('<a href="/example">A&amp;B</a>', "A&B"),
+            ("<span>中文</span> café", "中文 café"),
+            ("<b></b>", ""),
+        ],
+    )
+    def test_html_inline_cell_text(self, tag: str, content: str, expected: str) -> None:
+        header = content if tag == "th" else "Field"
+        value = content if tag == "td" else "value"
+        html = f"<table><tr><th>{header}</th></tr><tr><td>{value}</td></tr></table>"
+    
+        table = from_html_one(html)
+    
+>       assert table.field_names == [expected if tag == "th" else "Field"]
+E       AssertionError: assert ['after'] == ['before middle after']
+E         
+E         At index 0 diff: 'after' != 'before middle after'
+E         Use -v to get more diff
+
+tests\test_html.py:30: AssertionError
+_ TestHtmlConstructor.test_html_inline_cell_text[before <em>middle</em> after-before middle after-td] _
+
+self = <test_html.TestHtmlConstructor object at 0x000002068540EC50>, tag = 'td'
+content = 'before <em>middle</em> after', expected = 'before middle after'
+
+    @pytest.mark.parametrize("tag", ["th", "td"])
+    @pytest.mark.parametrize(
+        ("content", "expected"),
+        [
+            ("  plain  ", "plain"),
+            ("<strong>Alice</strong>", "Alice"),
+            ("before <em>middle</em> after", "before middle after"),
+            ("<span>Al</span><b>ice</b>", "Alice"),
+            ("<b>A<em>li</em>ce</b>", "Alice"),
+            ('<a href="/example">A&amp;B</a>', "A&B"),
+            ("<span>中文</span> café", "中文 café"),
+            ("<b></b>", ""),
+        ],
+    )
+    def test_html_inline_cell_text(self, tag: str, content: str, expected: str) -> None:
+        header = content if tag == "th" else "Field"
+        value = content if tag == "td" else "value"
+        html = f"<table><tr><th>{header}</th></tr><tr><td>{value}</td></tr></table>"
+    
+        table = from_html_one(html)
+    
+        assert table.field_names == [expected if tag == "th" else "Field"]
+>       assert table.rows == [[expected if tag == "td" else "value"]]
+E       AssertionError: assert [['after']] == [['before middle after']]
+E         
+E         At index 0 diff: ['after'] != ['before middle after']
+E         Use -v to get more diff
+
+tests\test_html.py:31: AssertionError
+_ TestHtmlConstructor.test_html_inline_cell_text[<span>Al</span><b>ice</b>-Alice-th] _
+
+self = <test_html.TestHtmlConstructor object at 0x000002068540EB90>, tag = 'th'
+content = '<span>Al</span><b>ice</b>', expected = 'Alice'
+
+    @pytest.mark.parametrize("tag", ["th", "td"])
+    @pytest.mark.parametrize(
+        ("content", "expected"),
+        [
+            ("  plain  ", "plain"),
+            ("<strong>Alice</strong>", "Alice"),
+            ("before <em>middle</em> after", "before middle after"),
+            ("<span>Al</span><b>ice</b>", "Alice"),
+            ("<b>A<em>li</em>ce</b>", "Alice"),
+            ('<a href="/example">A&amp;B</a>', "A&B"),
+            ("<span>中文</span> café", "中文 café"),
+            ("<b></b>", ""),
+        ],
+    )
+    def test_html_inline_cell_text(self, tag: str, content: str, expected: str) -> None:
+        header = content if tag == "th" else "Field"
+        value = content if tag == "td" else "value"
+        html = f"<table><tr><th>{header}</th></tr><tr><td>{value}</td></tr></table>"
+    
+        table = from_html_one(html)
+    
+>       assert table.field_names == [expected if tag == "th" else "Field"]
+E       AssertionError: assert [''] == ['Alice']
+E         
+E         At index 0 diff: '' != 'Alice'
+E         Use -v to get more diff
+
+tests\test_html.py:30: AssertionError
+_ TestHtmlConstructor.test_html_inline_cell_text[<span>Al</span><b>ice</b>-Alice-td] _
+
+self = <test_html.TestHtmlConstructor object at 0x000002068540F010>, tag = 'td'
+content = '<span>Al</span><b>ice</b>', expected = 'Alice'
+
+    @pytest.mark.parametrize("tag", ["th", "td"])
+    @pytest.mark.parametrize(
+        ("content", "expected"),
+        [
+            ("  plain  ", "plain"),
+            ("<strong>Alice</strong>", "Alice"),
+            ("before <em>middle</em> after", "before middle after"),
+            ("<span>Al</span><b>ice</b>", "Alice"),
+            ("<b>A<em>li</em>ce</b>", "Alice"),
+            ('<a href="/example">A&amp;B</a>', "A&B"),
+            ("<span>中文</span> café", "中文 café"),
+            ("<b></b>", ""),
+        ],
+    )
+    def test_html_inline_cell_text(self, tag: str, content: str, expected: str) -> None:
+        header = content if tag == "th" else "Field"
+        value = content if tag == "td" else "value"
+        html = f"<table><tr><th>{header}</th></tr><tr><td>{value}</td></tr></table>"
+    
+        table = from_html_one(html)
+    
+        assert table.field_names == [expected if tag == "th" else "Field"]
+>       assert table.rows == [[expected if tag == "td" else "value"]]
+E       AssertionError: assert [['']] == [['Alice']]
+E         
+E         At index 0 diff: [''] != ['Alice']
+E         Use -v to get more diff
+
+tests\test_html.py:31: AssertionError
+_ TestHtmlConstructor.test_html_inline_cell_text[<b>A<em>li</em>ce</b>-Alice-th] _
+
+self = <test_html.TestHtmlConstructor object at 0x000002068540EDD0>, tag = 'th'
+content = '<b>A<em>li</em>ce</b>', expected = 'Alice'
+
+    @pytest.mark.parametrize("tag", ["th", "td"])
+    @pytest.mark.parametrize(
+        ("content", "expected"),
+        [
+            ("  plain  ", "plain"),
+            ("<strong>Alice</strong>", "Alice"),
+            ("before <em>middle</em> after", "before middle after"),
+            ("<span>Al</span><b>ice</b>", "Alice"),
+            ("<b>A<em>li</em>ce</b>", "Alice"),
+            ('<a href="/example">A&amp;B</a>', "A&B"),
+            ("<span>中文</span> café", "中文 café"),
+            ("<b></b>", ""),
+        ],
+    )
+    def test_html_inline_cell_text(self, tag: str, content: str, expected: str) -> None:
+        header = content if tag == "th" else "Field"
+        value = content if tag == "td" else "value"
+        html = f"<table><tr><th>{header}</th></tr><tr><td>{value}</td></tr></table>"
+    
+        table = from_html_one(html)
+    
+>       assert table.field_names == [expected if tag == "th" else "Field"]
+E       AssertionError: assert [''] == ['Alice']
+E         
+E         At index 0 diff: '' != 'Alice'
+E         Use -v to get more diff
+
+tests\test_html.py:30: AssertionError
+_ TestHtmlConstructor.test_html_inline_cell_text[<b>A<em>li</em>ce</b>-Alice-td] _
+
+self = <test_html.TestHtmlConstructor object at 0x00000206853FA650>, tag = 'td'
+content = '<b>A<em>li</em>ce</b>', expected = 'Alice'
+
+    @pytest.mark.parametrize("tag", ["th", "td"])
+    @pytest.mark.parametrize(
+        ("content", "expected"),
+        [
+            ("  plain  ", "plain"),
+            ("<strong>Alice</strong>", "Alice"),
+            ("before <em>middle</em> after", "before middle after"),
+            ("<span>Al</span><b>ice</b>", "Alice"),
+            ("<b>A<em>li</em>ce</b>", "Alice"),
+            ('<a href="/example">A&amp;B</a>', "A&B"),
+            ("<span>中文</span> café", "中文 café"),
+            ("<b></b>", ""),
+        ],
+    )
+    def test_html_inline_cell_text(self, tag: str, content: str, expected: str) -> None:
+        header = content if tag == "th" else "Field"
+        value = content if tag == "td" else "value"
+        html = f"<table><tr><th>{header}</th></tr><tr><td>{value}</td></tr></table>"
+    
+        table = from_html_one(html)
+    
+        assert table.field_names == [expected if tag == "th" else "Field"]
+>       assert table.rows == [[expected if tag == "td" else "value"]]
+E       AssertionError: assert [['']] == [['Alice']]
+E         
+E         At index 0 diff: [''] != ['Alice']
+E         Use -v to get more diff
+
+tests\test_html.py:31: AssertionError
+_ TestHtmlConstructor.test_html_inline_cell_text[<a href="/example">A&amp;B</a>-A&B-th] _
+
+self = <test_html.TestHtmlConstructor object at 0x00000206853FBC50>, tag = 'th'
+content = '<a href="/example">A&amp;B</a>', expected = 'A&B'
+
+    @pytest.mark.parametrize("tag", ["th", "td"])
+    @pytest.mark.parametrize(
+        ("content", "expected"),
+        [
+            ("  plain  ", "plain"),
+            ("<strong>Alice</strong>", "Alice"),
+            ("before <em>middle</em> after", "before middle after"),
+            ("<span>Al</span><b>ice</b>", "Alice"),
+            ("<b>A<em>li</em>ce</b>", "Alice"),
+            ('<a href="/example">A&amp;B</a>', "A&B"),
+            ("<span>中文</span> café", "中文 café"),
+            ("<b></b>", ""),
+        ],
+    )
+    def test_html_inline_cell_text(self, tag: str, content: str, expected: str) -> None:
+        header = content if tag == "th" else "Field"
+        value = content if tag == "td" else "value"
+        html = f"<table><tr><th>{header}</th></tr><tr><td>{value}</td></tr></table>"
+    
+        table = from_html_one(html)
+    
+>       assert table.field_names == [expected if tag == "th" else "Field"]
+E       AssertionError: assert [''] == ['A&B']
+E         
+E         At index 0 diff: '' != 'A&B'
+E         Use -v to get more diff
+
+tests\test_html.py:30: AssertionError
+_ TestHtmlConstructor.test_html_inline_cell_text[<a href="/example">A&amp;B</a>-A&B-td] _
+
+self = <test_html.TestHtmlConstructor object at 0x00000206853FBA10>, tag = 'td'
+content = '<a href="/example">A&amp;B</a>', expected = 'A&B'
+
+    @pytest.mark.parametrize("tag", ["th", "td"])
+    @pytest.mark.parametrize(
+        ("content", "expected"),
+        [
+            ("  plain  ", "plain"),
+            ("<strong>Alice</strong>", "Alice"),
+            ("before <em>middle</em> after", "before middle after"),
+            ("<span>Al</span><b>ice</b>", "Alice"),
+            ("<b>A<em>li</em>ce</b>", "Alice"),
+            ('<a href="/example">A&amp;B</a>', "A&B"),
+            ("<span>中文</span> café", "中文 café"),
+            ("<b></b>", ""),
+        ],
+    )
+    def test_html_inline_cell_text(self, tag: str, content: str, expected: str) -> None:
+        header = content if tag == "th" else "Field"
+        value = content if tag == "td" else "value"
+        html = f"<table><tr><th>{header}</th></tr><tr><td>{value}</td></tr></table>"
+    
+        table = from_html_one(html)
+    
+        assert table.field_names == [expected if tag == "th" else "Field"]
+>       assert table.rows == [[expected if tag == "td" else "value"]]
+E       AssertionError: assert [['']] == [['A&B']]
+E         
+E         At index 0 diff: [''] != ['A&B']
+E         Use -v to get more diff
+
+tests\test_html.py:31: AssertionError
+_ TestHtmlConstructor.test_html_inline_cell_text[<span>\u4e2d\u6587</span> caf\xe9-\u4e2d\u6587 caf\xe9-th] _
+
+self = <test_html.TestHtmlConstructor object at 0x00000206853FB990>, tag = 'th'
+content = '<span>中文</span> café', expected = '中文 café'
+
+    @pytest.mark.parametrize("tag", ["th", "td"])
+    @pytest.mark.parametrize(
+        ("content", "expected"),
+        [
+            ("  plain  ", "plain"),
+            ("<strong>Alice</strong>", "Alice"),
+            ("before <em>middle</em> after", "before middle after"),
+            ("<span>Al</span><b>ice</b>", "Alice"),
+            ("<b>A<em>li</em>ce</b>", "Alice"),
+            ('<a href="/example">A&amp;B</a>', "A&B"),
+            ("<span>中文</span> café", "中文 café"),
+            ("<b></b>", ""),
+        ],
+    )
+    def test_html_inline_cell_text(self, tag: str, content: str, expected: str) -> None:
+        header = content if tag == "th" else "Field"
+        value = content if tag == "td" else "value"
+        html = f"<table><tr><th>{header}</th></tr><tr><td>{value}</td></tr></table>"
+    
+        table = from_html_one(html)
+    
+>       assert table.field_names == [expected if tag == "th" else "Field"]
+E       AssertionError: assert ['café'] == ['中文 café']
+E         
+E         At index 0 diff: 'café' != '中文 café'
+E         Use -v to get more diff
+
+tests\test_html.py:30: AssertionError
+_ TestHtmlConstructor.test_html_inline_cell_text[<span>\u4e2d\u6587</span> caf\xe9-\u4e2d\u6587 caf\xe9-td] _
+
+self = <test_html.TestHtmlConstructor object at 0x00000206853F9650>, tag = 'td'
+content = '<span>中文</span> café', expected = '中文 café'
+
+    @pytest.mark.parametrize("tag", ["th", "td"])
+    @pytest.mark.parametrize(
+        ("content", "expected"),
+        [
+            ("  plain  ", "plain"),
+            ("<strong>Alice</strong>", "Alice"),
+            ("before <em>middle</em> after", "before middle after"),
+            ("<span>Al</span><b>ice</b>", "Alice"),
+            ("<b>A<em>li</em>ce</b>", "Alice"),
+            ('<a href="/example">A&amp;B</a>', "A&B"),
+            ("<span>中文</span> café", "中文 café"),
+            ("<b></b>", ""),
+        ],
+    )
+    def test_html_inline_cell_text(self, tag: str, content: str, expected: str) -> None:
+        header = content if tag == "th" else "Field"
+        value = content if tag == "td" else "value"
+        html = f"<table><tr><th>{header}</th></tr><tr><td>{value}</td></tr></table>"
+    
+        table = from_html_one(html)
+    
+        assert table.field_names == [expected if tag == "th" else "Field"]
+>       assert table.rows == [[expected if tag == "td" else "value"]]
+E       AssertionError: assert [['café']] == [['中文 café']]
+E         
+E         At index 0 diff: ['café'] != ['中文 café']
+E         Use -v to get more diff
+
+tests\test_html.py:31: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_html.py::TestHtmlConstructor::test_html_inline_cell_text[<strong>Alice</strong>-Alice-th]
+FAILED tests/test_html.py::TestHtmlConstructor::test_html_inline_cell_text[<strong>Alice</strong>-Alice-td]
+FAILED tests/test_html.py::TestHtmlConstructor::test_html_inline_cell_text[before <em>middle</em> after-before middle after-th]
+FAILED tests/test_html.py::TestHtmlConstructor::test_html_inline_cell_text[before <em>middle</em> after-before middle after-td]
+FAILED tests/test_html.py::TestHtmlConstructor::test_html_inline_cell_text[<span>Al</span><b>ice</b>-Alice-th]
+FAILED tests/test_html.py::TestHtmlConstructor::test_html_inline_cell_text[<span>Al</span><b>ice</b>-Alice-td]
+FAILED tests/test_html.py::TestHtmlConstructor::test_html_inline_cell_text[<b>A<em>li</em>ce</b>-Alice-th]
+FAILED tests/test_html.py::TestHtmlConstructor::test_html_inline_cell_text[<b>A<em>li</em>ce</b>-Alice-td]
+FAILED tests/test_html.py::TestHtmlConstructor::test_html_inline_cell_text[<a href="/example">A&amp;B</a>-A&B-th]
+FAILED tests/test_html.py::TestHtmlConstructor::test_html_inline_cell_text[<a href="/example">A&amp;B</a>-A&B-td]
+FAILED tests/test_html.py::TestHtmlConstructor::test_html_inline_cell_text[<span>\u4e2d\u6587</span> caf\xe9-\u4e2d\u6587 caf\xe9-th]
+FAILED tests/test_html.py::TestHtmlConstructor::test_html_inline_cell_text[<span>\u4e2d\u6587</span> caf\xe9-\u4e2d\u6587 caf\xe9-td]
+================= 12 failed, 5 passed, 21 deselected in 0.48s =================

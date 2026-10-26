@@ -1,0 +1,59 @@
+py314: venv> .venv\Scripts\uv.exe venv -p cpython3.14 --allow-existing --prompt=resume-20261026-py-prettytable[py314] --python-preference system <workspace>\inspection\resume-20261026-py-prettytable\.tox\py314
+.pkg: _optional_hooks> python <workspace>\inspection\resume-20261026-py-prettytable\.venv\Lib\site-packages\pyproject_api\_backend.py True hatchling.build
+.pkg: get_requires_for_build_sdist> python <workspace>\inspection\resume-20261026-py-prettytable\.venv\Lib\site-packages\pyproject_api\_backend.py True hatchling.build
+.pkg: build_sdist> python <workspace>\inspection\resume-20261026-py-prettytable\.venv\Lib\site-packages\pyproject_api\_backend.py True hatchling.build
+py314: install_package_deps> .venv\Scripts\uv.exe pip install pytest-cov pytest-lazy-fixtures pytest>=9 wcwidth>=0.3.5
+py314: install_package> .venv\Scripts\uv.exe pip install --reinstall --no-deps prettytable@<workspace>\inspection\resume-20261026-py-prettytable\.tox\.tmp\package\6\prettytable-3.18.1.dev17.tar.gz
+py314: commands[0]> .tox\py314\Scripts\python.exe -m pytest --cov prettytable --cov tests --cov-report html --cov-report term --cov-report xml
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.1.1, pluggy-1.7.0
+cachedir: .tox\py314\.pytest_cache
+rootdir: <workspace>\inspection\resume-20261026-py-prettytable
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0, lazy-fixtures-1.4.1
+collected 354 items
+
+tests\test_colortable.py ............                                    [  3%]
+tests\test_html.py ......................................                [ 14%]
+tests\test_json.py ...                                                   [ 14%]
+tests\test_latex.py ....                                                 [ 16%]
+tests\test_mediawiki.py ..........                                       [ 18%]
+tests\test_prettytable.py .............................................. [ 31%]
+........................................................................ [ 52%]
+........................................................................ [ 72%]
+........................                                                 [ 79%]
+tests\test_rst.py ......                                                 [ 81%]
+tests\test_sections.py .....                                             [ 82%]
+tests\test_sorting.py ........                                           [ 84%]
+tests\test_style.py .................................................... [ 99%]
+..                                                                       [100%]
+
+=============================== tests coverage ================================
+_______________ coverage: platform win32, python 3.14.3-final-0 _______________
+
+Name                                                      Stmts   Miss  Cover
+-----------------------------------------------------------------------------
+.tox\py314\Lib\site-packages\prettytable\__init__.py          8      0   100%
+.tox\py314\Lib\site-packages\prettytable\_version.py         11      0   100%
+.tox\py314\Lib\site-packages\prettytable\colortable.py       60      2    97%
+.tox\py314\Lib\site-packages\prettytable\prettytable.py    1763     80    95%
+tests\conftest.py                                            63      0   100%
+tests\test_colortable.py                                     81      0   100%
+tests\test_html.py                                          112      0   100%
+tests\test_json.py                                           17      0   100%
+tests\test_latex.py                                          22      0   100%
+tests\test_mediawiki.py                                      45      0   100%
+tests\test_prettytable.py                                   853      0   100%
+tests\test_rst.py                                            33      0   100%
+tests\test_sections.py                                       40      0   100%
+tests\test_sorting.py                                        79      0   100%
+tests\test_style.py                                         145      0   100%
+-----------------------------------------------------------------------------
+TOTAL                                                      3332     82    98%
+Coverage HTML written to dir htmlcov
+Coverage XML written to file coverage.xml
+============================= 354 passed in 3.99s =============================
+.pkg: _exit> python <workspace>\inspection\resume-20261026-py-prettytable\.venv\Lib\site-packages\pyproject_api\_backend.py True hatchling.build
+  py314: OK (20.53=setup[12.75]+cmd[7.78] seconds)
+  congratulations :) (20.67 seconds)

@@ -1,0 +1,6 @@
+4.67.1 from /usr/local/lib/python3.14/site-packages/tox/__init__.py
+registered plugins:
+    tox-uv-bare-1.37.0 at /usr/local/lib/python3.14/site-packages/tox_uv/plugin.py with uv==0.13.5
+uv 0.13.5 (x86_64-unknown-linux-gnu)
+prek 0.5.7
+mypy 2.3.1 (compiled: yes)

@@ -1,0 +1,65 @@
+{
+  "lane": "baseline",
+  "python": "3.14.9 (main, Oct 21 2026, 22:25:42) [GCC 14.2.0]",
+  "module": "/runtime-baseline/lib/python3.14/site-packages/prettytable/__init__.py",
+  "version": "3.18.1.dev17",
+  "installedSourceBlobs": [
+    {
+      "file": "/runtime-baseline/lib/python3.14/site-packages/prettytable/__init__.py",
+      "blob": "5876dcfeac45fd01cb14299dc51919477fa015cc"
+    },
+    {
+      "file": "/runtime-baseline/lib/python3.14/site-packages/prettytable/__main__.py",
+      "blob": "ffd1381a652df47e8c6a99465e486a6e80ee1812"
+    },
+    {
+      "file": "/runtime-baseline/lib/python3.14/site-packages/prettytable/colortable.py",
+      "blob": "0f9d417a4e3aa076329de1a19fc2681c44f2cf20"
+    },
+    {
+      "file": "/runtime-baseline/lib/python3.14/site-packages/prettytable/prettytable.py",
+      "blob": "4cf2f389066bc681c2f959b1d33e8e7e3ed8f6e7"
+    },
+    {
+      "file": "/runtime-baseline/lib/python3.14/site-packages/prettytable/py.typed",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    }
+  ],
+  "fieldNames": [
+    "",
+    "Role"
+  ],
+  "rows": [
+    [
+      "Example",
+      ""
+    ]
+  ],
+  "csvReadFromDisk": [
+    [
+      "",
+      "Role"
+    ],
+    [
+      "Example",
+      ""
+    ]
+  ],
+  "restoredFields": [
+    "",
+    "Role"
+  ],
+  "restoredRows": [
+    [
+      "Example",
+      ""
+    ]
+  ],
+  "textReadFromDisk": "+---------+------+\n|         | Role |\n+---------+------+\n| Example |      |\n+---------+------+",
+  "correct": false,
+  "files": {
+    "input.html": "41a16689e885373d53f3511d60356e526e14d5680dd546a72aba762f608c05f7",
+    "output.csv": "4389ea682f3a442e27db91a265baf84103d7b3d235d3bb78f230f096e1732ab6",
+    "output.txt": "f17c34eda230fc24b67d183f6505b46b4318a7ec01497e0dafcfc3c341d4d75e"
+  }
+}

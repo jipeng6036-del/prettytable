@@ -1,0 +1,12 @@
+mypy: venv> .venv\Scripts\uv.exe venv -p <workspace>\inspection\resume-20261026-py-prettytable\.venv\Scripts\python.exe --allow-existing --prompt=resume-20261026-py-prettytable[mypy] --python-preference system <workspace>\inspection\resume-20261026-py-prettytable\.tox\mypy
+mypy: install_deps> .venv\Scripts\uv.exe pip install -r requirements-mypy.txt
+.pkg: _optional_hooks> python <workspace>\inspection\resume-20261026-py-prettytable\.venv\Lib\site-packages\pyproject_api\_backend.py True hatchling.build
+.pkg: get_requires_for_build_sdist> python <workspace>\inspection\resume-20261026-py-prettytable\.venv\Lib\site-packages\pyproject_api\_backend.py True hatchling.build
+.pkg: build_sdist> python <workspace>\inspection\resume-20261026-py-prettytable\.venv\Lib\site-packages\pyproject_api\_backend.py True hatchling.build
+mypy: install_package_deps> .venv\Scripts\uv.exe pip install pytest-cov pytest-lazy-fixtures pytest>=9 wcwidth>=0.3.5
+mypy: install_package> .venv\Scripts\uv.exe pip install --reinstall --no-deps prettytable@<workspace>\inspection\resume-20261026-py-prettytable\.tox\.tmp\package\5\prettytable-3.18.1.dev17.tar.gz
+mypy: commands[0]> mypy .
+Success: no issues found in 16 source files
+.pkg: _exit> python <workspace>\inspection\resume-20261026-py-prettytable\.venv\Lib\site-packages\pyproject_api\_backend.py True hatchling.build
+  mypy: OK (57.39=setup[48.59]+cmd[8.80] seconds)
+  congratulations :) (57.47 seconds)

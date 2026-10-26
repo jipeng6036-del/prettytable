@@ -1,0 +1,25 @@
+lint: commands[0]> prek run --all-files --show-diff-on-failure
+ruff check...............................................................Passed
+black....................................................................Passed
+check for added large files..............................................Passed
+check for case conflicts.................................................Passed
+check for merge conflicts................................................Passed
+check toml...............................................................Passed
+check yaml...............................................................Passed
+debug statements (python)................................................Passed
+fix end of files.........................................................Passed
+forbid submodules....................................(no files to check)Skipped
+fix requirements.txt.....................................................Passed
+trim trailing whitespace.................................................Passed
+Validate Dependabot Config (v2)..........................................Passed
+Validate GitHub Workflows................................................Passed
+Lint GitHub Actions workflow files.......................................Passed
+zizmor...................................................................Passed
+pyproject-fmt............................................................Passed
+Validate pyproject.toml..................................................Passed
+tox-ini-fmt..............................................................Passed
+prettier.................................................................Passed
+Check hooks apply........................................................Passed
+Check useless excludes...................................................Passed
+  lint: OK (8.90=setup[0.00]+cmd[8.90] seconds)
+  congratulations :) (8.93 seconds)

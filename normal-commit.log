@@ -1,0 +1,258 @@
+{
+  "base": "5fec60c0fd85530e5299d8c6e39dc030bfd7ce9f",
+  "verified": 45,
+  "files": [
+    {
+      "path": ".github/FUNDING.yml",
+      "blob": "68c38e23a6d5277fb4cd393a6de8035ef20288c0",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "blob": "e4d8008db050519a41105ecef1f7fdce9b8d6b90",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "blob": "db79645b020092d90e05255f405af89f8f84cede",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/SECURITY.md",
+      "blob": "485d85fea1f8ecb8a8c9a248511c44a6b13d8bd7",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "blob": "5a8d6611fb61daab57321f0f762f1718c25b46f1",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/labels.yml",
+      "blob": "703e85dc4921f7a985ee2381cfe065db24d86179",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/release-drafter.yml",
+      "blob": "462e6dfeccc67afd2c68a13b0953cbc0573bd8d1",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/workflows/labels.yml",
+      "blob": "40264bd565c09cf983d2e55b2af4ada516d55d59",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/workflows/lint.yml",
+      "blob": "a806b876e51bf918b8429a5e6fda00234a5d0a44",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/workflows/release-drafter.yml",
+      "blob": "2e37f36b089fd107950602fcddd0767c9a4a370d",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "blob": "7262ba665dc5ba2699bb72b122eb42110521fda9",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/workflows/require-pr-label.yml",
+      "blob": "0be4f1243e5204b280284c98ae14af8e70cddb3a",
+      "mode": "100644"
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "blob": "70e6237f3cc81aa99089ff7e07d32e73e5de480a",
+      "mode": "100644"
+    },
+    {
+      "path": ".gitignore",
+      "blob": "77fd1aa5bb4ea9bccd6501bd957d61b7e939b5d5",
+      "mode": "100644"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "blob": "3a01fa8d595f49fc4bbd0e7bf668cc5c6bbeac35",
+      "mode": "100644"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "blob": "b4b12198ee8bfd9dca23b1fda7f56293ac59d1c2",
+      "mode": "100644"
+    },
+    {
+      "path": "LICENSE",
+      "blob": "cb6fed3eb821a2e0fb06a625c2af89b4bc4577ec",
+      "mode": "100644"
+    },
+    {
+      "path": "README.md",
+      "blob": "52c3c694cba56b371c8ba4d1b3f01b921fe0195a",
+      "mode": "100644"
+    },
+    {
+      "path": "RELEASING.md",
+      "blob": "6a84239ba63daf20b3c8641b9ecbae084e1ebc86",
+      "mode": "100644"
+    },
+    {
+      "path": "pyproject.toml",
+      "blob": "a56611cb365199868aa261d0cb8010f042edf041",
+      "mode": "100644"
+    },
+    {
+      "path": "requirements-mypy.txt",
+      "blob": "4ce713d32eeeeb9a72bad8c4ee89f9df4a9e4603",
+      "mode": "100644"
+    },
+    {
+      "path": "src/prettytable/__init__.py",
+      "blob": "5876dcfeac45fd01cb14299dc51919477fa015cc",
+      "mode": "100644"
+    },
+    {
+      "path": "src/prettytable/__main__.py",
+      "blob": "ffd1381a652df47e8c6a99465e486a6e80ee1812",
+      "mode": "100644"
+    },
+    {
+      "path": "src/prettytable/colortable.py",
+      "blob": "0f9d417a4e3aa076329de1a19fc2681c44f2cf20",
+      "mode": "100644"
+    },
+    {
+      "path": "src/prettytable/prettytable.py",
+      "blob": "65723ba53c7b5f8241ff20e336b2c340db55bcc0",
+      "mode": "100644"
+    },
+    {
+      "path": "src/prettytable/py.typed",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/conftest.py",
+      "blob": "22aa54c8b276356fe4c9f969f39ed32ab074b9e2",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/data/table_align_center.txt",
+      "blob": "c25becb19d7fd0efff97346f5809b8d7b4a4c4ba",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/data/table_align_left.txt",
+      "blob": "ad65ed9437801998450676f815571db71955fded",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/data/table_align_right.txt",
+      "blob": "3e1e73875d096cdb27ad278b495176e79211a653",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/data/table_ansi_colors.txt",
+      "blob": "4dc5d86f520f9a617605d620de7b406870284693",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/data/table_cjk.txt",
+      "blob": "e928b5292825f1e0c94e2155cef2660ce52e3464",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/data/table_combining_chars.txt",
+      "blob": "c0da2c2b05fa4ba3c2573f6e1f254720ca21d73c",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/data/table_complex_emoji.txt",
+      "blob": "2a39e8164f32a9f8f441a2e436fa0ff9c25c2017",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_colortable.py",
+      "blob": "dfbb1598a4fcbb38d02a1e63f0fe1546e326086e",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_html.py",
+      "blob": "eb317456be45429c4280544761a3f93d901026a9",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_json.py",
+      "blob": "c04b72c287622d4c0a533d0a31213ad4cf3eb290",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_latex.py",
+      "blob": "7faa7c819211a0d5f451eb2c86b2127451457503",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_mediawiki.py",
+      "blob": "f472440a53a040f2811cb7cacfba04b112182b4a",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_prettytable.py",
+      "blob": "889311b49011ed1673b9cdb1660f7cfa31adf02e",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_rst.py",
+      "blob": "bc4e4e8498c5395f0b2dd5992e20371771a58196",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_sections.py",
+      "blob": "cdb5c98fd92794825c84901a5696869038265b60",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_sorting.py",
+      "blob": "172e634745005edb344270f1e6b9bf84b30c65ca",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/test_style.py",
+      "blob": "818461f944bb848437e895c6be7c76585f1bf9d9",
+      "mode": "100644"
+    },
+    {
+      "path": "tox.ini",
+      "blob": "9468cd03c383a41ab55801fb7bb1d48a218a61dd",
+      "mode": "100644"
+    }
+  ]
+}
+Installed Git hook at `.git/hooks/pre-commit`
+ruff check...............................................................Passed
+black....................................................................Passed
+check for added large files..............................................Passed
+check for case conflicts.................................................Passed
+check for merge conflicts................................................Passed
+check toml...........................................(no files to check)Skipped
+check yaml...........................................(no files to check)Skipped
+debug statements (python)................................................Passed
+fix end of files.........................................................Passed
+forbid submodules....................................(no files to check)Skipped
+fix requirements.txt.................................(no files to check)Skipped
+trim trailing whitespace.................................................Passed
+Validate Dependabot Config (v2)......................(no files to check)Skipped
+Validate GitHub Workflows............................(no files to check)Skipped
+Lint GitHub Actions workflow files...................(no files to check)Skipped
+zizmor...............................................(no files to check)Skipped
+pyproject-fmt........................................(no files to check)Skipped
+Validate pyproject.toml..............................(no files to check)Skipped
+tox-ini-fmt..........................................(no files to check)Skipped
+prettier.................................................................Passed
+Check hooks apply....................................(no files to check)Skipped
+Check useless excludes...............................(no files to check)Skipped
+[fix/html-inline-cell-text 9a675a1] Fix text loss inside inline HTML cell tags
+ 2 files changed, 42 insertions(+), 4 deletions(-)
+9a675a1b20e4008b3202e121eb2aff6c362a7bb9
+3ca97240b8fd227c60964fa78e7d5790a179ebe2

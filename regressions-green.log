@@ -1,0 +1,10 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.1.1, pluggy-1.7.0
+rootdir: <workspace>\inspection\resume-20261026-py-prettytable
+configfile: pyproject.toml
+plugins: platformdirs-4.13.5, cov-7.1.0, lazy-fixtures-1.4.1
+collected 38 items / 21 deselected / 17 selected
+
+tests\test_html.py .................                                     [100%]
+
+====================== 17 passed, 21 deselected in 0.07s ======================

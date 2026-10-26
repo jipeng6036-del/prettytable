@@ -1,0 +1,371 @@
+Hit:1 http://deb.debian.org/debian trixie InRelease
+Get:2 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+Get:3 http://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+Get:4 http://deb.debian.org/debian trixie/main amd64 Packages [9678 kB]
+Get:5 http://deb.debian.org/debian trixie-updates/main amd64 Packages [720 B]
+Get:6 http://deb.debian.org/debian-security trixie-security/main amd64 Packages [270 kB]
+Fetched 10.0 MB in 21s (477 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ca-certificates is already the newest version (20250419+deb13u1).
+The following additional packages will be installed:
+  git-man libbrotli1 libcom-err2 libcurl3t64-gnutls liberror-perl libexpat1
+  libgdbm-compat4t64 libgnutls30t64 libgssapi-krb5-2 libidn2-0 libk5crypto3
+  libkeyutils1 libkrb5-3 libkrb5support0 libldap2 libnghttp2-14 libnghttp3-9
+  libngtcp2-16 libngtcp2-crypto-gnutls8 libp11-kit0 libperl5.40 libpsl5t64
+  librtmp1 libsasl2-2 libsasl2-modules-db libssh2-1t64 libtasn1-6
+  libunistring5 perl perl-modules-5.40
+Suggested packages:
+  gettext-base git-doc git-email git-gui gitk gitweb git-cvs git-mediawiki
+  git-svn gnutls-bin krb5-doc krb5-user sensible-utils perl-doc
+  libterm-readline-gnu-perl | libterm-readline-perl-perl make
+  libtap-harness-archive-perl
+Recommended packages:
+  patch less ssh-client krb5-locales libldap-common publicsuffix
+  libsasl2-modules
+The following NEW packages will be installed:
+  git git-man libbrotli1 libcom-err2 libcurl3t64-gnutls liberror-perl
+  libexpat1 libgdbm-compat4t64 libgnutls30t64 libgssapi-krb5-2 libidn2-0
+  libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libldap2 libnghttp2-14
+  libnghttp3-9 libngtcp2-16 libngtcp2-crypto-gnutls8 libp11-kit0 libperl5.40
+  libpsl5t64 librtmp1 libsasl2-2 libsasl2-modules-db libssh2-1t64 libtasn1-6
+  libunistring5 perl perl-modules-5.40
+0 upgraded, 31 newly installed, 0 to remove and 1 not upgraded.
+Need to get 23.6 MB of archives.
+After this operation, 119 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian-security trixie-security/main amd64 libexpat1 amd64 2.9.0-1~deb13u1 [126 kB]
+Get:2 http://deb.debian.org/debian trixie/main amd64 perl-modules-5.40 all 5.40.1-6+deb13u1 [3014 kB]
+Get:3 http://deb.debian.org/debian trixie/main amd64 libgdbm-compat4t64 amd64 1.24-2 [50.3 kB]
+Get:4 http://deb.debian.org/debian trixie/main amd64 libperl5.40 amd64 5.40.1-6+deb13u1 [4326 kB]
+Get:5 http://deb.debian.org/debian trixie/main amd64 perl amd64 5.40.1-6+deb13u1 [268 kB]
+Get:6 http://deb.debian.org/debian-security trixie-security/main amd64 libbrotli1 amd64 1.1.0-2+deb13u1 [304 kB]
+Get:7 http://deb.debian.org/debian trixie/main amd64 libunistring5 amd64 1.3-2 [477 kB]
+Get:8 http://deb.debian.org/debian trixie/main amd64 libidn2-0 amd64 2.3.8-2 [109 kB]
+Get:9 http://deb.debian.org/debian trixie/main amd64 libp11-kit0 amd64 0.25.5-3 [425 kB]
+Get:10 http://deb.debian.org/debian trixie/main amd64 libtasn1-6 amd64 4.20.0-2+deb13u1 [50.1 kB]
+Get:11 http://deb.debian.org/debian trixie/main amd64 libgnutls30t64 amd64 3.8.9-3+deb13u4 [1469 kB]
+Get:12 http://deb.debian.org/debian trixie/main amd64 libkrb5support0 amd64 1.21.3-5+deb13u1 [33.1 kB]
+Get:13 http://deb.debian.org/debian trixie/main amd64 libcom-err2 amd64 1.47.2-3+b12 [25.0 kB]
+Get:14 http://deb.debian.org/debian trixie/main amd64 libk5crypto3 amd64 1.21.3-5+deb13u1 [81.2 kB]
+Get:15 http://deb.debian.org/debian trixie/main amd64 libkeyutils1 amd64 1.6.3-6 [9456 B]
+Get:16 http://deb.debian.org/debian trixie/main amd64 libkrb5-3 amd64 1.21.3-5+deb13u1 [326 kB]
+Get:17 http://deb.debian.org/debian trixie/main amd64 libgssapi-krb5-2 amd64 1.21.3-5+deb13u1 [138 kB]
+Get:18 http://deb.debian.org/debian trixie/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg1-9 [19.8 kB]
+Get:19 http://deb.debian.org/debian trixie/main amd64 libsasl2-2 amd64 2.1.28+dfsg1-9 [57.5 kB]
+Get:20 http://deb.debian.org/debian trixie/main amd64 libldap2 amd64 2.6.10+dfsg-1 [194 kB]
+Get:21 http://deb.debian.org/debian trixie/main amd64 libnghttp2-14 amd64 1.64.0-1.1+deb13u1 [76.2 kB]
+Get:22 http://deb.debian.org/debian trixie/main amd64 libnghttp3-9 amd64 1.8.0-1 [67.7 kB]
+Get:23 http://deb.debian.org/debian trixie/main amd64 libngtcp2-16 amd64 1.11.0-1+deb13u1 [132 kB]
+Get:24 http://deb.debian.org/debian trixie/main amd64 libngtcp2-crypto-gnutls8 amd64 1.11.0-1+deb13u1 [29.5 kB]
+Get:25 http://deb.debian.org/debian trixie/main amd64 libpsl5t64 amd64 0.21.2-1.1+b1 [57.2 kB]
+Get:26 http://deb.debian.org/debian trixie/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b5 [58.8 kB]
+Get:27 http://deb.debian.org/debian trixie/main amd64 libssh2-1t64 amd64 1.11.1-1+deb13u2 [245 kB]
+Get:28 http://deb.debian.org/debian-security trixie-security/main amd64 libcurl3t64-gnutls amd64 8.14.1-2+deb13u7 [385 kB]
+Get:29 http://deb.debian.org/debian trixie/main amd64 liberror-perl all 0.17030-1 [26.9 kB]
+Get:30 http://deb.debian.org/debian trixie/main amd64 git-man all 1:2.47.3-0+deb13u1 [2205 kB]
+Get:31 http://deb.debian.org/debian trixie/main amd64 git amd64 1:2.47.3-0+deb13u1 [8862 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 31.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Fetched 23.6 MB in 4s (5423 kB/s)
+Selecting previously unselected package libexpat1:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 5658 files and directories currently installed.)
+Preparing to unpack .../00-libexpat1_2.9.0-1~deb13u1_amd64.deb ...
+Unpacking libexpat1:amd64 (2.9.0-1~deb13u1) ...
+Selecting previously unselected package perl-modules-5.40.
+Preparing to unpack .../01-perl-modules-5.40_5.40.1-6+deb13u1_all.deb ...
+Unpacking perl-modules-5.40 (5.40.1-6+deb13u1) ...
+Selecting previously unselected package libgdbm-compat4t64:amd64.
+Preparing to unpack .../02-libgdbm-compat4t64_1.24-2_amd64.deb ...
+Unpacking libgdbm-compat4t64:amd64 (1.24-2) ...
+Selecting previously unselected package libperl5.40:amd64.
+Preparing to unpack .../03-libperl5.40_5.40.1-6+deb13u1_amd64.deb ...
+Unpacking libperl5.40:amd64 (5.40.1-6+deb13u1) ...
+Selecting previously unselected package perl.
+Preparing to unpack .../04-perl_5.40.1-6+deb13u1_amd64.deb ...
+Unpacking perl (5.40.1-6+deb13u1) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../05-libbrotli1_1.1.0-2+deb13u1_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.1.0-2+deb13u1) ...
+Selecting previously unselected package libunistring5:amd64.
+Preparing to unpack .../06-libunistring5_1.3-2_amd64.deb ...
+Unpacking libunistring5:amd64 (1.3-2) ...
+Selecting previously unselected package libidn2-0:amd64.
+Preparing to unpack .../07-libidn2-0_2.3.8-2_amd64.deb ...
+Unpacking libidn2-0:amd64 (2.3.8-2) ...
+Selecting previously unselected package libp11-kit0:amd64.
+Preparing to unpack .../08-libp11-kit0_0.25.5-3_amd64.deb ...
+Unpacking libp11-kit0:amd64 (0.25.5-3) ...
+Selecting previously unselected package libtasn1-6:amd64.
+Preparing to unpack .../09-libtasn1-6_4.20.0-2+deb13u1_amd64.deb ...
+Unpacking libtasn1-6:amd64 (4.20.0-2+deb13u1) ...
+Selecting previously unselected package libgnutls30t64:amd64.
+Preparing to unpack .../10-libgnutls30t64_3.8.9-3+deb13u4_amd64.deb ...
+Unpacking libgnutls30t64:amd64 (3.8.9-3+deb13u4) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../11-libkrb5support0_1.21.3-5+deb13u1_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.21.3-5+deb13u1) ...
+Selecting previously unselected package libcom-err2:amd64.
+Preparing to unpack .../12-libcom-err2_1.47.2-3+b12_amd64.deb ...
+Unpacking libcom-err2:amd64 (1.47.2-3+b12) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../13-libk5crypto3_1.21.3-5+deb13u1_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.21.3-5+deb13u1) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../14-libkeyutils1_1.6.3-6_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-6) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../15-libkrb5-3_1.21.3-5+deb13u1_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.21.3-5+deb13u1) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../16-libgssapi-krb5-2_1.21.3-5+deb13u1_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.21.3-5+deb13u1) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../17-libsasl2-modules-db_2.1.28+dfsg1-9_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg1-9) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../18-libsasl2-2_2.1.28+dfsg1-9_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.28+dfsg1-9) ...
+Selecting previously unselected package libldap2:amd64.
+Preparing to unpack .../19-libldap2_2.6.10+dfsg-1_amd64.deb ...
+Unpacking libldap2:amd64 (2.6.10+dfsg-1) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../20-libnghttp2-14_1.64.0-1.1+deb13u1_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.64.0-1.1+deb13u1) ...
+Selecting previously unselected package libnghttp3-9:amd64.
+Preparing to unpack .../21-libnghttp3-9_1.8.0-1_amd64.deb ...
+Unpacking libnghttp3-9:amd64 (1.8.0-1) ...
+Selecting previously unselected package libngtcp2-16:amd64.
+Preparing to unpack .../22-libngtcp2-16_1.11.0-1+deb13u1_amd64.deb ...
+Unpacking libngtcp2-16:amd64 (1.11.0-1+deb13u1) ...
+Selecting previously unselected package libngtcp2-crypto-gnutls8:amd64.
+Preparing to unpack .../23-libngtcp2-crypto-gnutls8_1.11.0-1+deb13u1_amd64.deb ...
+Unpacking libngtcp2-crypto-gnutls8:amd64 (1.11.0-1+deb13u1) ...
+Selecting previously unselected package libpsl5t64:amd64.
+Preparing to unpack .../24-libpsl5t64_0.21.2-1.1+b1_amd64.deb ...
+Unpacking libpsl5t64:amd64 (0.21.2-1.1+b1) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../25-librtmp1_2.4+20151223.gitfa8646d.1-2+b5_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b5) ...
+Selecting previously unselected package libssh2-1t64:amd64.
+Preparing to unpack .../26-libssh2-1t64_1.11.1-1+deb13u2_amd64.deb ...
+Unpacking libssh2-1t64:amd64 (1.11.1-1+deb13u2) ...
+Selecting previously unselected package libcurl3t64-gnutls:amd64.
+Preparing to unpack .../27-libcurl3t64-gnutls_8.14.1-2+deb13u7_amd64.deb ...
+Unpacking libcurl3t64-gnutls:amd64 (8.14.1-2+deb13u7) ...
+Selecting previously unselected package liberror-perl.
+Preparing to unpack .../28-liberror-perl_0.17030-1_all.deb ...
+Unpacking liberror-perl (0.17030-1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../29-git-man_1%3a2.47.3-0+deb13u1_all.deb ...
+Unpacking git-man (1:2.47.3-0+deb13u1) ...
+Selecting previously unselected package git.
+Preparing to unpack .../30-git_1%3a2.47.3-0+deb13u1_amd64.deb ...
+Unpacking git (1:2.47.3-0+deb13u1) ...
+Setting up libexpat1:amd64 (2.9.0-1~deb13u1) ...
+Setting up libkeyutils1:amd64 (1.6.3-6) ...
+Setting up libgdbm-compat4t64:amd64 (1.24-2) ...
+Setting up libbrotli1:amd64 (1.1.0-2+deb13u1) ...
+Setting up libnghttp2-14:amd64 (1.64.0-1.1+deb13u1) ...
+Setting up libcom-err2:amd64 (1.47.2-3+b12) ...
+Setting up libkrb5support0:amd64 (1.21.3-5+deb13u1) ...
+Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg1-9) ...
+Setting up libp11-kit0:amd64 (0.25.5-3) ...
+Setting up libunistring5:amd64 (1.3-2) ...
+Setting up libk5crypto3:amd64 (1.21.3-5+deb13u1) ...
+Setting up libsasl2-2:amd64 (2.1.28+dfsg1-9) ...
+Setting up libnghttp3-9:amd64 (1.8.0-1) ...
+Setting up perl-modules-5.40 (5.40.1-6+deb13u1) ...
+Setting up libtasn1-6:amd64 (4.20.0-2+deb13u1) ...
+Setting up git-man (1:2.47.3-0+deb13u1) ...
+Setting up libngtcp2-16:amd64 (1.11.0-1+deb13u1) ...
+Setting up libkrb5-3:amd64 (1.21.3-5+deb13u1) ...
+Setting up libssh2-1t64:amd64 (1.11.1-1+deb13u2) ...
+Setting up libldap2:amd64 (2.6.10+dfsg-1) ...
+Setting up libidn2-0:amd64 (2.3.8-2) ...
+Setting up libperl5.40:amd64 (5.40.1-6+deb13u1) ...
+Setting up perl (5.40.1-6+deb13u1) ...
+Setting up libgssapi-krb5-2:amd64 (1.21.3-5+deb13u1) ...
+Setting up libgnutls30t64:amd64 (3.8.9-3+deb13u4) ...
+Setting up libpsl5t64:amd64 (0.21.2-1.1+b1) ...
+Setting up liberror-perl (0.17030-1) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b5) ...
+Setting up libngtcp2-crypto-gnutls8:amd64 (1.11.0-1+deb13u1) ...
+Setting up libcurl3t64-gnutls:amd64 (8.14.1-2+deb13u7) ...
+Setting up git (1:2.47.3-0+deb13u1) ...
+Processing triggers for libc-bin (2.41-12+deb13u4) ...
+Collecting tox
+  Downloading tox-4.67.1-py3-none-any.whl.metadata (3.7 kB)
+Collecting tox-uv
+  Downloading tox_uv-1.37.0-py3-none-any.whl.metadata (15 kB)
+Collecting uv
+  Downloading uv-0.13.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Collecting build
+  Downloading build-1.6.1-py3-none-any.whl.metadata (5.6 kB)
+Collecting cachetools>=7.0.3 (from tox)
+  Downloading cachetools-7.2.5-py3-none-any.whl.metadata (5.5 kB)
+Collecting colorama>=0.4.6 (from tox)
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting filelock>=3.25 (from tox)
+  Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Collecting packaging>=26 (from tox)
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting platformdirs>=4.9.4 (from tox)
+  Downloading platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+Collecting pluggy>=1.6 (from tox)
+  Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pyproject-api>=1.10 (from tox)
+  Downloading pyproject_api-1.12.0-py3-none-any.whl.metadata (2.1 kB)
+Collecting python-discovery>=1.4.4 (from tox)
+  Downloading python_discovery-1.6.4-py3-none-any.whl.metadata (5.1 kB)
+Collecting tomli-w>=1.2 (from tox)
+  Downloading tomli_w-1.2.0-py3-none-any.whl.metadata (5.7 kB)
+Collecting virtualenv>=21.1 (from tox)
+  Downloading virtualenv-21.14.13-py3-none-any.whl.metadata (4.1 kB)
+Collecting tox-uv-bare==1.37.0 (from tox-uv)
+  Downloading tox_uv_bare-1.37.0-py3-none-any.whl.metadata (15 kB)
+Collecting pyproject_hooks (from build)
+  Downloading pyproject_hooks-1.3.3-py3-none-any.whl.metadata (1.3 kB)
+Collecting distlib<1,>=0.4.3 (from virtualenv>=21.1->tox)
+  Downloading distlib-0.4.4-py2.py3-none-any.whl.metadata (5.3 kB)
+Downloading tox-4.67.1-py3-none-any.whl (238 kB)
+Downloading tox_uv-1.37.0-py3-none-any.whl (6.6 kB)
+Downloading tox_uv_bare-1.37.0-py3-none-any.whl (22 kB)
+Downloading uv-0.13.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.2/17.2 MB 4.0 MB/s  0:00:04
+Downloading build-1.6.1-py3-none-any.whl (31 kB)
+Downloading cachetools-7.2.5-py3-none-any.whl (19 kB)
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading platformdirs-4.13.5-py3-none-any.whl (32 kB)
+Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+Downloading pyproject_api-1.12.0-py3-none-any.whl (14 kB)
+Downloading python_discovery-1.6.4-py3-none-any.whl (39 kB)
+Downloading tomli_w-1.2.0-py3-none-any.whl (6.7 kB)
+Downloading virtualenv-21.14.13-py3-none-any.whl (5.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 5.7 MB/s  0:00:00
+Downloading distlib-0.4.4-py2.py3-none-any.whl (472 kB)
+Downloading pyproject_hooks-1.3.3-py3-none-any.whl (10 kB)
+Installing collected packages: distlib, uv, tomli-w, pyproject_hooks, pluggy, platformdirs, packaging, filelock, colorama, cachetools, python-discovery, pyproject-api, build, virtualenv, tox, tox-uv-bare, tox-uv
+
+Successfully installed build-1.6.1 cachetools-7.2.5 colorama-0.4.6 distlib-0.4.4 filelock-4.2.4 packaging-26.3 platformdirs-4.13.5 pluggy-1.7.0 pyproject-api-1.12.0 pyproject_hooks-1.3.3 python-discovery-1.6.4 tomli-w-1.2.0 tox-4.67.1 tox-uv-1.37.0 tox-uv-bare-1.37.0 uv-0.13.5 virtualenv-21.14.13
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+py: venv> /usr/local/bin/uv venv -p /usr/local/bin/python --allow-existing '--prompt=work[py]' --python-preference system /work/.tox/py
+.pkg: venv> /usr/local/bin/uv venv -p /usr/local/bin/python --allow-existing '--prompt=work[.pkg]' --python-preference system /work/.tox/.pkg
+.pkg: install_requires> /usr/local/bin/uv pip install hatch-vcs 'hatchling>=1.27'
+.pkg: _optional_hooks> python /usr/local/lib/python3.14/site-packages/pyproject_api/_backend.py True hatchling.build
+.pkg: get_requires_for_build_sdist> python /usr/local/lib/python3.14/site-packages/pyproject_api/_backend.py True hatchling.build
+.pkg: build_sdist> python /usr/local/lib/python3.14/site-packages/pyproject_api/_backend.py True hatchling.build
+py: install_package_deps> /usr/local/bin/uv pip install pytest-cov pytest-lazy-fixtures 'pytest>=9' 'wcwidth>=0.3.5'
+py: install_package> /usr/local/bin/uv pip install --reinstall --no-deps prettytable@/work/.tox/.tmp/package/1/prettytable-3.18.1.dev17.tar.gz
+py: commands[0]> .tox/py/bin/python -m pytest --cov prettytable --cov tests --cov-report html --cov-report term --cov-report xml
+============================= test session starts ==============================
+platform linux -- Python 3.14.9, pytest-9.1.1, pluggy-1.7.0
+cachedir: .tox/py/.pytest_cache
+rootdir: /work
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0, lazy-fixtures-1.4.1
+collected 354 items
+
+tests/test_colortable.py ............                                    [  3%]
+tests/test_html.py ......................................                [ 14%]
+tests/test_json.py ...                                                   [ 14%]
+tests/test_latex.py ....                                                 [ 16%]
+tests/test_mediawiki.py ..........                                       [ 18%]
+tests/test_prettytable.py .............................................. [ 31%]
+........................................................................ [ 52%]
+........................................................................ [ 72%]
+........................                                                 [ 79%]
+tests/test_rst.py ......                                                 [ 81%]
+tests/test_sections.py .....                                             [ 82%]
+tests/test_sorting.py ........                                           [ 84%]
+tests/test_style.py .................................................... [ 99%]
+..                                                                       [100%]
+
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.9-final-0 ________________
+
+Name                                                              Stmts   Miss  Cover
+-------------------------------------------------------------------------------------
+.tox/py/lib/python3.14/site-packages/prettytable/__init__.py          8      0   100%
+.tox/py/lib/python3.14/site-packages/prettytable/_version.py         11      0   100%
+.tox/py/lib/python3.14/site-packages/prettytable/colortable.py       60      1    98%
+.tox/py/lib/python3.14/site-packages/prettytable/prettytable.py    1763     80    95%
+tests/conftest.py                                                    63      0   100%
+tests/test_colortable.py                                             81      0   100%
+tests/test_html.py                                                  112      0   100%
+tests/test_json.py                                                   17      0   100%
+tests/test_latex.py                                                  22      0   100%
+tests/test_mediawiki.py                                              45      0   100%
+tests/test_prettytable.py                                           853      0   100%
+tests/test_rst.py                                                    33      0   100%
+tests/test_sections.py                                               40      0   100%
+tests/test_sorting.py                                                79      0   100%
+tests/test_style.py                                                 145      0   100%
+-------------------------------------------------------------------------------------
+TOTAL                                                              3332     81    98%
+Coverage HTML written to dir htmlcov
+Coverage XML written to file coverage.xml
+============================= 354 passed in 1.62s ==============================
+py: OK ✔ in 14.6 seconds
+mypy: venv> /usr/local/bin/uv venv -p /usr/local/bin/python --allow-existing '--prompt=work[mypy]' --python-preference system /work/.tox/mypy
+mypy: install_deps> /usr/local/bin/uv pip install -r requirements-mypy.txt
+mypy: install_package_deps> /usr/local/bin/uv pip install pytest-cov pytest-lazy-fixtures 'pytest>=9' 'wcwidth>=0.3.5'
+mypy: install_package> /usr/local/bin/uv pip install --reinstall --no-deps prettytable@/work/.tox/.tmp/package/2/prettytable-3.18.1.dev17.tar.gz
+mypy: commands[0]> mypy .
+Success: no issues found in 16 source files
+.pkg: _exit> python /usr/local/lib/python3.14/site-packages/pyproject_api/_backend.py True hatchling.build
+  py: OK (14.60=setup[11.08]+cmd[3.52] seconds)
+  mypy: OK (26.84=setup[23.50]+cmd[3.34] seconds)
+  congratulations :) (41.48 seconds)
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - hatch-vcs
+  - hatchling>=1.27
+* Getting build dependencies for sdist...
+* Installed build dependency versions:
+  - hatch-vcs==0.5.0
+  - hatchling==1.32.4
+* Building sdist...
+* Building wheel from sdist
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - hatch-vcs
+  - hatchling>=1.27
+* Getting build dependencies for wheel...
+* Installed build dependency versions:
+  - hatch-vcs==0.5.0
+  - hatchling==1.32.4
+* Building wheel...
+Successfully built prettytable-3.18.1.dev17.tar.gz and prettytable-3.18.1.dev17-py3-none-any.whl
