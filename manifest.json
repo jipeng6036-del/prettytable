@@ -19,8 +19,8 @@
     },
     {
       "file": "file-baseline/output.csv",
-      "sha256": "04995ca71fcea64eaf7bdb8c9858127dc5d58f992873aa58c55a01aa9400ff0e",
-      "bytes": 15
+      "sha256": "4389ea682f3a442e27db91a265baf84103d7b3d235d3bb78f230f096e1732ab6",
+      "bytes": 17
     },
     {
       "file": "file-baseline/output.txt",
@@ -39,8 +39,8 @@
     },
     {
       "file": "file-candidate-final/output.csv",
-      "sha256": "77ed909c8315294f1abb4e87c47aa5992cdd276de3d1ce0dd0e13875aaa02c74",
-      "bytes": 33
+      "sha256": "deda16de7a88038331c11700927ba3b6651e926f1f127ffb049367b4392bccd3",
+      "bytes": 35
     },
     {
       "file": "file-candidate-final/output.txt",
